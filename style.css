@@ -1,0 +1,725 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 100%;
+}
+.header{
+    width: 100%;
+    float: left;
+    background-image: url(img/legkiy-landing-page-maket-dlya-sayta-restorana.png);
+    background-size: cover;
+}
+.main{
+    width: 100%;
+    float: left;
+}
+.footer{
+    width: 100%;
+    float: left;
+    background-image: url(img/fon.jpg);
+    display: flex;
+    justify-content: space-around ;
+}
+.navigation{
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 24px;
+}
+.burgmenu{
+    display: none;
+}
+
+
+
+
+.burgmenu{
+    width: 100%;
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 40px;
+    margin-top: 20px;
+}
+#checkmenu{
+    display: none;
+}
+.burgermenu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+    font-size: 49px;
+    font-family: 'Dancing Script', cursive;
+}
+.burger-line{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    transition: .5s;
+}
+.secondt, .thirdt{
+    top: 18px;
+}
+.fourtht{
+    top: 28px;
+}
+.navmenu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    max-height: 0;
+    transform: translateY(100%);
+    overflow: hidden;
+    font-size: 0;
+    transition: .5s;
+}
+.burger{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid white;
+    background-color: #00000096;;
+}
+.burger:hover{
+    color: #db1919;
+}
+#checkmenu:checked~.navmenu{
+    max-height: 500px;
+    font-size: 15px;
+    
+}
+#checkmenu:checked~.firstt{
+    display: none;
+}
+#checkmenu:checked~.fourtht{
+    display: none;
+}
+#checkmenu:checked~.secondt{
+    transform: rotate(45deg);
+}
+#checkmenu:checked~.thirdt{
+    transform: rotate(-45deg);
+}
+
+
+
+.logo{
+    margin-left: 5%;
+}
+ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+a{
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
+a:hover{
+    color: rgba(251, 82, 49, 255);
+}
+.logotup{
+    width: 100%;
+    margin-top: 215px;
+}
+.logtext{
+    color: rgba(255, 255, 255, 255);
+    font-size: 108px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+   
+}
+.picture{
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+}
+.knopka{
+    border: 1px solid red;
+    background: #8d2e1ca3;
+    width: 228px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.knopk{
+    color: white;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+.knopku{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: auto;
+    margin-top: 34px;
+    margin-bottom: 107px;
+}
+.knopka:hover{
+    background: #ffffff3d;
+    border: 1px solid white;
+}
+
+.ourstory{
+    width: 100%;
+    background-image: url(img/Vector%20Smart%20Object@1X.png);
+    float:left;
+}
+.textlogo{
+    text-align: center;
+    color: rgba(251, 82, 49, 255);
+    font-size: 43px;
+    font-family: 'Dancing Script', cursive;
+}
+.pidlog{
+    margin-top: 107px;
+}
+.pidpic{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.tetx{
+    color: rgba(76, 76, 76, 255);
+    text-align: center;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+.pidtext{
+    width: 505px;
+    margin: auto;
+    margin-top: 32px;
+}
+.autor{
+    display: flex;
+    justify-content: center;
+    margin-top: 43px;
+    margin-bottom: 114px;
+}
+.ingredients{
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+.syshi{
+    display: flex;
+    align-items: center;
+}
+.fon{
+    background-image: url(img/legkiy-landing-page-maket-dlya-sayta-restorana%20%D0%BA%D0%BE%D0%BF%D1%96%D1%8F.png);
+    background-size: cover;
+    width: 570px;
+}
+.fonlog{
+    text-align: center;
+    color: rgba(255, 255, 255, 255);
+    font-size: 43px;
+    font-family: 'Dancing Script', cursive;
+}
+.fonlogo{
+    margin-top: 181px;
+}
+.fonpicture{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.fontext{
+    width: 394px;
+    margin: auto;
+    margin-top: 30px;
+}
+.fontex{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+.one{
+    border-radius: 50px;
+    border-color: 2px #ce6757;
+}
+.pictures{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 183px;
+    margin-top: 41px;
+    
+}
+.menu{
+    width: 100%;
+    background-image: url(img/__Layer\ group_.png);
+    display: flex;
+    justify-content: center;
+    
+}
+.menudiv{
+    width: 33%;
+}
+.logomenu{
+    margin-top: 60px;
+}
+.logmenu{
+    color: white;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;;
+}
+.imgmenu{
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+.menuimg{
+    opacity: 50%;
+}
+.cena{
+    
+}
+.pidcena{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+.textc{
+    color: white;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+.pidcenac{
+    margin-top: 15px;;
+}
+.line{
+    border-bottom: 1px solid #4c2f3d;
+    margin-top: 12px;
+}
+.one{
+    margin-top: 109px;
+}
+.textc{
+    color: white;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+.two{
+    margin-left: 117px;
+}
+.stars{
+    width: 100%;
+}
+.capcake{
+    display: flex;
+    justify-content: center;
+    margin-top: 136px;
+}
+.cuplog{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 43px;
+    margin-top: 34px;
+}
+.zigzag{
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+}
+.zig{
+    opacity: 70%;
+}
+.caketext{
+    font-size: 30px;
+    color: rgba(26, 31, 59, 255);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 42px;
+}
+.starss{
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+    margin-bottom: 160px;
+}
+.cupp{
+    margin-top: 50px;
+}
+.menudiv{
+    margin-bottom: 87px;
+}
+.fotos{
+    width: 100%;
+    background-image: url(img/2021-09-22\ 18.52.40.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.fotoo{
+    margin-top: 100px;
+    margin-bottom: 103px;
+}
+.twofo{
+    margin-left: 30px;
+}
+.onefo{
+}
+.fototext{
+    width: 40%;
+    margin-top: 102px;
+}
+.fotologo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fotolog{
+    font-size: 36pt;
+    color: rgba(251, 82, 49, 255);
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+.pidfoto{
+    margin-top: 8px;
+}
+.textfoto{
+    font-size: 19px;
+    text-align: center;
+    width: 392px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 32px;
+}
+.formm{
+    display: flex;
+    flex-direction: column;
+}
+label.labelname {
+    font-size: 20px;
+    color: #fb5231;
+    font-family: 'Open Sans', sans-serif;
+}
+input.name {
+    width: 200px;
+    height: 35px;
+}
+.rowone{
+    display: flex;
+    justify-content: space-around;
+}
+
+label.labelemail {
+    font-size: 20px;
+    color: #fb5231;
+    font-family: 'Open Sans', sans-serif;
+}
+input.email {
+    width: 200px;
+    height: 35px;
+}
+input[type="email"]::placeholder { 
+    font-family: 'Saira', sans-serif;
+    padding-left: 5%;
+}
+
+
+input[type="text"]::placeholder { 
+    font-family: 'Saira', sans-serif; 
+    padding-left: 5%;
+}
+
+
+label.labeldate {
+    font-size: 20px;
+    color: #fb5231;
+    font-family: 'Open Sans', sans-serif;
+}
+input.date {
+    width: 200px;
+    height: 35px;
+}
+input[type="number"]::placeholder { 
+    font-family: 'Saira', sans-serif;
+    padding-left: 5%;
+}
+
+label.labelparty {
+    font-size: 20px;
+    color: #fb5231;
+    font-family: 'Open Sans', sans-serif;
+}
+input.party {
+    width: 200px;
+    height: 35px;
+}
+input[type="select"]::placeholder { 
+    font-family: 'Saira', sans-serif;
+    padding-left: 5%;
+}
+.rowtwo{
+    display: flex;
+    justify-content: space-around;
+}
+input.name:focus{
+    border: 2px solid red;
+}
+.book{
+    width: 200px;
+    height: 36px;
+    background-color: #fb5535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.knopkbook{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    color: white;
+}
+.rowthree{
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+}
+.phonenumber{
+    color: #969595;
+    font-size: 16px;
+    margin-top: 18px;
+}
+.tel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.restor{
+    margin-top: 60px;
+}
+.imgrest{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 36px;
+    margin-bottom: 99px;
+}
+.facebook{
+    width: 30px;
+    height: 30px;
+    background: #20295e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.twitter{
+    width: 30px;
+    height: 30px;
+    background: #20295e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.ball{
+    width: 30px;
+    height: 30px;
+    background: #20295e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.instagram{
+    width: 30px;
+    height: 30px;
+    background: #20295e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.pinterest{
+    width: 30px;
+    height: 30px;
+    background: #20295e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.adress{
+    color: #969595;
+    font-size: 16px;
+    margin-top: 18px;
+}
+.pinterest:hover{
+    background-color: red;
+}
+.instagram:hover{
+    background-color: red;
+}
+.facebook:hover{
+    background-color: red;
+}
+.twitter:hover{
+    background-color: red;
+}
+.ball:hover{
+    background-color: red;
+}
+
+
+@media (min-width: 0px) and (max-width:768px){
+    .navigation{
+        display: none;
+    }
+    .burgmenu{
+        display: block;
+    }
+    .logtext{
+        font-size: 65px;
+    }
+    .knopku{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .knopka{
+        margin-top: 15px;
+    }
+    .logotup{
+        margin-top: 100px;
+    }
+    .header{
+        background-size: cover ;
+    }
+    .pidtext{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .syshi{
+        display: none;
+    }
+    .menudiv {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .menu{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .two{
+        margin-left: 10%;
+    }
+    .fon{
+        width: 100%;
+    }
+    .fontext{
+        width: 80%;
+    }
+    .cuptext {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .caketext{
+        font-size: 25px;
+    }
+    .fotoo{
+        display: none;
+    }
+    .fototext{
+        width: 80%;
+    }
+    .textfoto{
+        width: 80%;
+    }
+    .rowone{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rowtwo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .book{
+        margin-bottom: 50px;
+    }
+    .rest {
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .imgrest{
+        margin-bottom: 36px;
+    }
+    .map{
+        margin-top: 36px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 769px) and (max-width:1279px){
+    .navigation{
+        display: none;
+    }
+    .burgmenu{
+        display: block;
+    }
+    .knopku{
+        width: 80%;
+    }
+    .burger-line{
+        right: 30px;
+    }
+    .syshi{
+        display: none;
+    }
+    .fon{
+        box-shadow: 5px 0px 14px gray;
+    }
+    .fotoo{
+        display: none;
+    }
+    .fototext {
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .textfoto{
+        width: 70%;
+    }
+    .formm{
+        margin-top: 25px;
+    }
+}
